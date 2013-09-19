@@ -19,7 +19,7 @@ export PS1="\[\033[0;34m\][\u@\h:\w]$\[\033[0m\]"
 ##############################################################################
 # Enable colors in "ls" command output
 alias ls="ls -G"
-alias ll="ls -alrtF --color"
+alias ll="ls -AlrtF"
 alias cls="tput clear"
 alias cp='cp -i'
 alias mv='mv -i'
