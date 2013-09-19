@@ -1,0 +1,7 @@
+set smooth
+set autoindent
+set tabsize 2
+set tabstospaces
+
+include "~/dotfiles/nano/js.nanorc"
+
