@@ -20,3 +20,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 export PATH=/usr/local/opt/ruby/bin:$PATH
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
+
+export GOPATH=~/google_drive/src/go
+export PATH=$PATH:$GOPATH/bin
