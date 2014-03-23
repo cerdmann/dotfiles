@@ -30,3 +30,7 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
 done
+
+#map vim folder to home folder
+mv ~/.vim $olddir/
+ln -s $dir/vim ~/.vim

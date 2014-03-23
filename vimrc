@@ -88,6 +88,33 @@ else
 
 endif " has("autocmd")
 
+"set tab stop behavior
+set tabstop=2
+set expandtab
+set shiftwidth=2
+set smartindent
+set number
+set nowrap
+set backspace=indent,eol,start
+set autoindent
+set copyindent
+set shiftround
+set showmatch
+set ignorecase
+set smartcase
+set smarttab
+set hlsearch
+set incsearch
+set hidden
+set history=1000
+set undolevels=1000
+set title
+set visualbell
+set noerrorbells
+set nobackup
+set noswapfile
+
+
 " Convenient command to see the difference between the current buffer and the
 " file it was loaded from, thus the changes you made.
 " Only define it when not defined already.
