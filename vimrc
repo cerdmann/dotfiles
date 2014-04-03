@@ -88,7 +88,7 @@ else
 
 endif " has("autocmd")
 
-"set tab stop behavior
+" set tab stop behavior
 set tabstop=2
 set expandtab
 set shiftwidth=2
@@ -114,6 +114,12 @@ set noerrorbells
 set nobackup
 set noswapfile
 
+
+" html to javascript string, and back again
+vmap <silent> ;h :s?^\(\s*\)+ '\([^']\+\)',*\s*$?\1\2?g<CR>
+vmap <silent> ;q :s?^\(\s*\)\(.*\)\s*$? \1 + '\2'?<CR>
+
+colorscheme grb256 
 
 " Convenient command to see the difference between the current buffer and the
 " file it was loaded from, thus the changes you made.
