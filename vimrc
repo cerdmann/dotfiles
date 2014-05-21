@@ -119,6 +119,25 @@ set noswapfile
 vmap <silent> ;h :s?^\(\s*\)+ '\([^']\+\)',*\s*$?\1\2?g<CR>
 vmap <silent> ;q :s?^\(\s*\)\(.*\)\s*$? \1 + '\2'?<CR>
 
+"**************
+"** My Stuff **
+"**************
+
+" Custom map to format headers
+nnoremap <F4> I** <Esc>A **<Esc>yyPv$r*yyjp
+
+function! Js_MethodHeader()
+  r~/.vim/templates/javascript_method_header.txt
+endfunction
+
+nnoremap <F3> :call Js_MethodHeader()<CR>
+
+function! Js_FileStart()
+  r~/.vim/templates/javascript_file_start.txt
+endfunction
+
+nnoremap <F2> :call Js_FileStart()<CR>
+
 colorscheme grb256 
 
 " Convenient command to see the difference between the current buffer and the
@@ -128,3 +147,13 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
+
+syntax on
+
+filetype plugin indent off
+set runtimepath+=$GOROOT/misc/vim
+filetype plugin indent on
+
+autocmd FileType go compiler go
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
+execute pathogen#infect()

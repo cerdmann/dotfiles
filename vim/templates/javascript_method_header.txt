@@ -1,0 +1,14 @@
+// Begin public method /xxxxx/
+//
+// Example    :
+// Purpose    :
+// Arguments  :
+//  * yyyyyyyyyyyyy   -
+// Action     :
+// Returns    : true
+// Throws     : none
+//
+xxxxx = function () {
+
+  return true;
+};
