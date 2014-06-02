@@ -3,13 +3,13 @@
  * fileDescription
 */
 
-/*jshint              bitwise  : true,  camelcase : true,
+/*jshint              bitwise  : true,  camelcase : false,
     curly    : true,  eqeqeq   : true,  freeze    : true,
     immed    : true,  indent   : 2,     noarg     : true,
     nonbsp   : true,  nonew    : true,  quotmark  : single,
     undef    : true,  unused   : true,  strict    : true,
     trailing : true,  maxdepth : 2,     maxlen    : 78,
-    jquery   : true
+    jquery   : true,  plusplus : true
 */
 
 /*global $, scouts*/
