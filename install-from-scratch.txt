@@ -1,0 +1,13 @@
+***********************
+** New Machine Setup **
+***********************
+
+Install homebrew
+
+brew install go
+
+Install Google Cloud SDK
+
+Install Heroku toolbelt
+
+

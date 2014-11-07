@@ -9,10 +9,8 @@ export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 export NODE_PATH=/usr/local/lib/node
 export PATH=/usr/local/share/npm/bin:$PATH
-#export PATH=/usr/local/heroku/bin:$PATH
 
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
-#export PATH=/usr/local/mysql/bin:$PATH
 
 export RBENV_ROOT=/usr/local/var/rbenv
 
@@ -24,17 +22,27 @@ export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 #********************
 #** Golang Support **
 #********************
-#export GOROOT=/usr/local/opt/go
-#export PATH=$PATH:$GOROOT/bin
-export GOPATH=~/google_drive/src/go
+export GOROOT=/usr/local/opt/go
+export GOPATH=$GOROOT/libexec
 export PATH=$PATH:$GOPATH/bin
 
-
-# added by Anaconda 2.1.0 installer
-export PATH="/Users/cerdmann/anaconda/bin:$PATH"
-
+#******************************
+#** Google Cloud SDK Support **
+#******************************
 # The next line updates PATH for the Google Cloud SDK.
 source '/Users/cerdmann/google-cloud-sdk/path.bash.inc'
 
 # The next line enables bash completion for gcloud.
 source '/Users/cerdmann/google-cloud-sdk/completion.bash.inc'
+
+#*********************
+#** Heroku Toolbelt **
+#*********************
+# Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+
+
+# added by Anaconda 2.1.0 installer
+# export PATH="/Users/cerdmann/anaconda/bin:$PATH"
+
