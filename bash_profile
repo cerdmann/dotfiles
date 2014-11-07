@@ -24,7 +24,7 @@ export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 #********************
 export GOROOT=/usr/local/opt/go
 export GOPATH=$GOROOT/libexec
-export PATH=$PATH:$GOPATH/bin
+export PATH=$GOPATH/bin:$PATH
 
 #******************************
 #** Google Cloud SDK Support **
