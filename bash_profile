@@ -23,6 +23,8 @@ export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 #** Golang Support **
 #********************
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export GOPATH=$HOME/google_drive/src/go
+export PATH=$PATH:$GOPATH/bin
 
 #******************************
 #** Google Cloud SDK Support **
