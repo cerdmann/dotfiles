@@ -123,6 +123,29 @@ vmap <silent> ;q :s?^\(\s*\)\(.*\)\s*$? \1 + '\2'?<CR>
 "** My Stuff **
 "**************
 
+"**************
+"** Pathogen **
+"**************
+execute pathogen#infect()
+
+"****************
+"** Go Support **
+"****************
+if exists("g:did_load_filetypes")
+  filetype off
+  filetype plugin indent off
+endif
+set runtimepath+=/usr/local/Cellar/go/1.3.3/libexec/misc/vim
+filetype plugin indent on
+syntax on
+
+"auto formats Go source files when saved
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
+
+"***************************
+"** Other Cutom Additions **
+"***************************
+
 " Custom map to format headers
 nnoremap <F4> I** <Esc>A **<Esc>yyPv$r*yyjp
 
@@ -148,12 +171,4 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
-syntax on
 
-filetype plugin indent off
-set runtimepath+=$GOROOT/misc/vim
-filetype plugin indent on
-
-autocmd FileType go compiler go
-autocmd FileType go autocmd BufWritePre <buffer> Fmt
-execute pathogen#infect()
