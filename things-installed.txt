@@ -1,0 +1,7 @@
+**************
+** Exercism **
+**************
+
+brew tap homebrew/binary
+brew install exercism
+
