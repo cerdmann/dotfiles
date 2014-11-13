@@ -11,3 +11,6 @@ Install Google Cloud SDK
 Install Heroku toolbelt
 
 
+Install App Engine Go SDK
+
+

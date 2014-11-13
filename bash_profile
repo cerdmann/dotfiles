@@ -41,6 +41,10 @@ source '/Users/cerdmann/google-cloud-sdk/completion.bash.inc'
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+#***********************
+#** Go App Engine SDK **
+#***********************
+export PATH="/Users/cerdmann/appengine/go_appengine:$PATH"
 
 
 # added by Anaconda 2.1.0 installer
