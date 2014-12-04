@@ -17,6 +17,7 @@ brew cask install --appdir="/Applications" google-drive
 brew cask install --appdir="/Applications" firefox
 
 brew install wget
+brew install tree
 brew install go
 brew install node
 brew install gradle
