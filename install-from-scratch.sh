@@ -19,6 +19,7 @@ brew cask install --appdir="/Applications" firefox
 brew install wget
 brew install go
 brew install node
+brew install gradle
 
 brew cask install --appdir="/Applications" java 
 brew cask install --appdir="/Applications" intellij-idea 
