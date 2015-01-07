@@ -13,6 +13,8 @@ brew install caskroom/cask/brew-cask # http://caskroom.io
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" virtualbox
 brew cask install --appdir="/Applications" google-drive 
+brew cask install --appdir="/Applications" vagrant 
+brew cask install --appdir="/Applications" vagrant-manager 
 
 brew cask install --appdir="/Applications" firefox
 
