@@ -28,7 +28,9 @@ brew cask install --appdir="/Applications" java
 brew cask install --appdir="/Applications" intellij-idea 
 brew cask install --appdir="/Applications" skype 
 
-
+brew tap pivotal/tap
+brew update
+brew install springboot
 
 brew install docker
 brew install boot2docker
