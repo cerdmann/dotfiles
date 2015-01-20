@@ -31,6 +31,7 @@ brew cask install --appdir="/Applications" skype
 brew tap pivotal/tap
 brew update
 brew install springboot
+brew install maven
 
 brew install docker
 brew install boot2docker
