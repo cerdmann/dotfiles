@@ -31,3 +31,8 @@ alias goapp=/opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk
 #*********************
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+#******************
+#** Java Support **
+#******************
+export JAVA_HOME=$(/usr/libexec/java_home)

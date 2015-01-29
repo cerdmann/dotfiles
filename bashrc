@@ -45,3 +45,5 @@ export VAGRANT_DEFAULT_PROVIDER=parallels
 
 #Boot2Docker
 $(boot2docker shellinit)
+export REDIS_HOST=192.168.59.103
+export REDIS_PORT=6379
