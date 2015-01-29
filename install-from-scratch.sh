@@ -40,6 +40,8 @@ boot2docker init
 boot2docker up
 boot2docker down
 
+brew install fig
+
 brew cask install --appdir="/Applications" heroku-toolbelt
 brew cask install --appdir="/Applications" sublime-text
 brew cask install google-cloud-sdk
