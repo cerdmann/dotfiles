@@ -8,6 +8,12 @@ brew update
 
 brew install vim
 
+#************
+#** python **
+#************
+brew install python
+brew install python3
+
 brew install caskroom/cask/brew-cask # http://caskroom.io
 
 brew cask install --appdir="/Applications" google-chrome
