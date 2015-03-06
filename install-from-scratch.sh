@@ -38,6 +38,7 @@ brew tap pivotal/tap
 brew update
 brew install springboot
 brew install maven
+brew install cloudfoundry-cli
 
 brew install docker
 brew install boot2docker
@@ -50,7 +51,6 @@ brew install fig
 
 brew cask install --appdir="/Applications" heroku-toolbelt
 brew cask install --appdir="/Applications" sublime-text
-brew cask install --appdir="/Applications" cloudfoundry-cli
 brew cask install google-cloud-sdk
 gcloud auth login
 gcloud components update gae-go
