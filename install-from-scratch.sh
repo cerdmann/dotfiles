@@ -50,6 +50,7 @@ brew install fig
 
 brew cask install --appdir="/Applications" heroku-toolbelt
 brew cask install --appdir="/Applications" sublime-text
+brew cask install --appdir="/Applications" cloudfoundry-cli
 brew cask install google-cloud-sdk
 gcloud auth login
 gcloud components update gae-go
