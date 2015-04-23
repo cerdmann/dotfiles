@@ -58,3 +58,8 @@ gcloud components update gae-go
 brew cleanup --force
 rm -f -r /Library/Caches/Homebrew/*
 
+#**********
+#** Ruby **
+#**********
+brew install rbenv
+brew install ruby-build

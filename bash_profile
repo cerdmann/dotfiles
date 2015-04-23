@@ -36,3 +36,9 @@ export PATH="/usr/local/heroku/bin:$PATH"
 #** Java Support **
 #******************
 export JAVA_HOME=$(/usr/libexec/java_home)
+
+#******************
+#** Ruby Support **
+#******************
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
