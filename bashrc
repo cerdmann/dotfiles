@@ -41,9 +41,10 @@ set -o noclobber
 
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;31'
-export VAGRANT_DEFAULT_PROVIDER=parallels
+export VAGRANT_DEFAULT_PROVIDER=virtualbox
 
 #Boot2Docker
-$(boot2docker shellinit)
-export REDIS_HOST=192.168.59.103
-export REDIS_PORT=6379
+`eval "$(boot2docker shellinit)"`
+
+#export REDIS_HOST=192.168.59.103
+#export REDIS_PORT=6379

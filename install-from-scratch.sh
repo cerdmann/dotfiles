@@ -64,3 +64,13 @@ rm -f -r /Library/Caches/Homebrew/*
 #**********
 brew install rbenv
 brew install ruby-build
+
+#*************
+#** Lattice **
+#*************
+mkdir -p $HOME/bin
+curl https://lattice.s3.amazonaws.com/releases/latest/darwin-amd64/ltc -o $HOME/bin/ltc
+chmod +x $HOME/bin/ltc
+
+
+

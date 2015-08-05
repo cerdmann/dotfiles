@@ -22,15 +22,15 @@ export PATH=$PATH:$GOPATH/bin
 #******************************
 #** Google Cloud SDK Support **
 #******************************
-source '/opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
-source '/opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
-alias goapp=/opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/platform/google_appengine/goapp
+#source '/opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
+#source '/opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
+#alias goapp=/opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/platform/google_appengine/goapp
 
 #*********************
 #** Heroku Toolbelt **
 #*********************
 # Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+#export PATH="/usr/local/heroku/bin:$PATH"
 
 #******************
 #** Java Support **
@@ -40,5 +40,5 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 #******************
 #** Ruby Support **
 #******************
-export RBENV_ROOT=/usr/local/var/rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+#export RBENV_ROOT=/usr/local/var/rbenv
+#if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
