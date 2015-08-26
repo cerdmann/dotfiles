@@ -72,5 +72,15 @@ mkdir -p $HOME/bin
 curl https://lattice.s3.amazonaws.com/releases/latest/darwin-amd64/ltc -o $HOME/bin/ltc
 chmod +x $HOME/bin/ltc
 
+#*********
+#** npm **
+#*********
 
+npm install -g bower
+npm install -g grunt
+npm install -g grunt-cli
+npm install -g yo
+npm install -g generator-polymer
+npm install -g gulp
+npm install -g polyserve
 

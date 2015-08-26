@@ -42,3 +42,8 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 #******************
 #export RBENV_ROOT=/usr/local/var/rbenv
 #if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+#********************
+#** Groovy Support **
+#********************
+export GROOVY_HOME=/usr/local/opt/groovy/libexec
