@@ -47,3 +47,8 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 #** Groovy Support **
 #********************
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
+
+#***************
+#** OpenShift **
+#***************
+export PATH=$PATH:~/tools/OpenShift

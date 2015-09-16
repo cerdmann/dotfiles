@@ -41,12 +41,10 @@ brew install springboot
 brew install maven
 brew install cloudfoundry-cli
 
-brew install docker
-brew install boot2docker
-ln -sfv /usr/local/opt/boot2docker/*.plist ~/Library/LaunchAgents
-boot2docker init
-boot2docker up
-boot2docker down
+#************
+#** Docker **
+#************
+brew cask install dockertoolbox
 
 brew install fig
 
