@@ -26,6 +26,8 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
+alias brewup='brew update && brew doctor && brew outdated && brew upgrade && brew cleanup'
+
 ##############################################################################
 # 03. Theme/Colors                                                           #
 ##############################################################################
@@ -43,5 +45,10 @@ export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;31'
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
 
-#export REDIS_HOST=192.168.59.103
-#export REDIS_PORT=6379
+# added by travis gem
+[ -f /Users/cerdmann/.travis/travis.sh ] && source /Users/cerdmann/.travis/travis.sh
+
+export NVM_DIR="/Users/cerdmann/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+eval "$(direnv hook bash)"

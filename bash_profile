@@ -12,13 +12,6 @@ export PATH=/usr/local/share/npm/bin:$PATH
 
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 
-#********************
-#** Golang Support **
-#********************
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
-export GOPATH=$HOME/google_drive/src/go
-export PATH=$PATH:$GOPATH/bin
-
 #******************************
 #** Google Cloud SDK Support **
 #******************************
@@ -48,7 +41,17 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 #********************
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/cerdmann/google-cloud-sdk/path.bash.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/cerdmann/google-cloud-sdk/completion.bash.inc'
+export PATH=$PATH:$HOME/bin/traveling-bosh
+source ~/azure.completion.sh
+source ~/azure.completion.sh
+
 #***************
-#** OpenShift **
+#**  OpenSSL  **
 #***************
-export PATH=$PATH:~/tools/OpenShift
+
+export PATH=/usr/local/opt/openssl@1.1/bin:$PATH
