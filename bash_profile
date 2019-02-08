@@ -42,13 +42,13 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/cerdmann/google-cloud-sdk/path.bash.inc'
+#source '/Users/cerdmann/google-cloud-sdk/path.bash.inc'
 
 # The next line enables shell command completion for gcloud.
-source '/Users/cerdmann/google-cloud-sdk/completion.bash.inc'
-export PATH=$PATH:$HOME/bin/traveling-bosh
-source ~/azure.completion.sh
-source ~/azure.completion.sh
+#source '/Users/cerdmann/google-cloud-sdk/completion.bash.inc'
+#export PATH=$PATH:$HOME/bin/traveling-bosh
+#source ~/azure.completion.sh
+#source ~/azure.completion.sh
 
 #***************
 #**  OpenSSL  **
