@@ -33,6 +33,7 @@ brew install gradle
 brew cask install --appdir="/Applications" java 
 brew cask install --appdir="/Applications" intellij-idea 
 brew cask install --appdir="/Applications" skype 
+brew cask install --appdir="/Applications" atom 
 
 brew tap pivotal/tap
 brew update
@@ -40,12 +41,10 @@ brew install springboot
 brew install maven
 brew install cloudfoundry-cli
 
-brew install docker
-brew install boot2docker
-ln -sfv /usr/local/opt/boot2docker/*.plist ~/Library/LaunchAgents
-boot2docker init
-boot2docker up
-boot2docker down
+#************
+#** Docker **
+#************
+brew cask install dockertoolbox
 
 brew install fig
 
@@ -63,3 +62,23 @@ rm -f -r /Library/Caches/Homebrew/*
 #**********
 brew install rbenv
 brew install ruby-build
+
+#*************
+#** Lattice **
+#*************
+mkdir -p $HOME/bin
+curl https://lattice.s3.amazonaws.com/releases/latest/darwin-amd64/ltc -o $HOME/bin/ltc
+chmod +x $HOME/bin/ltc
+
+#*********
+#** npm **
+#*********
+
+npm install -g bower
+npm install -g grunt
+npm install -g grunt-cli
+npm install -g yo
+npm install -g generator-polymer
+npm install -g gulp
+npm install -g polyserve
+
