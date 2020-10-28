@@ -23,7 +23,15 @@ brew install maven
 brew install jenv
 brew install pyenv
 
+brew install jupyterlab
+
 pip3 install --upgrade pip setuptools six wheel
+pip install ipykernel
+pip3 install ipython
+pip3 install bash_kernel
+
+python -m bash_kernel.install
+
 
 jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/
 jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/
