@@ -22,6 +22,7 @@ brew install maven
 
 brew install jenv
 brew install pyenv
+brew install direnv
 
 brew install jupyterlab
 
