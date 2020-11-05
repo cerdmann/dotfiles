@@ -25,6 +25,7 @@ brew install pyenv
 brew install direnv
 
 brew install jupyterlab
+brew install git-crypt
 
 pip3 install --upgrade pip setuptools six wheel
 pip install ipykernel
