@@ -32,6 +32,7 @@ pip3 install --upgrade pip setuptools six wheel
 pip install ipykernel
 pip3 install ipython
 pip3 install bash_kernel
+python3 -m pip install nb-clean
 
 python -m bash_kernel.install
 
