@@ -17,6 +17,7 @@ brew cask install adoptopenjdk/openjdk/adoptopenjdk8
 brew cask install adoptopenjdk11
 brew cask install adoptopenjdk14
 brew install homebrew/cask/docker
+brew install kind
 
 brew install gradle
 brew install maven
