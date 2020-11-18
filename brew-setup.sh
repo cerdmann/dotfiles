@@ -37,6 +37,9 @@ python3 -m pip install nb-clean
 
 python -m bash_kernel.install
 
+brew tap homebrew/cask-fonts
+brew cask install font-hack-nerd-font
+
 
 jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/
 jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/
