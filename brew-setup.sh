@@ -1,5 +1,5 @@
 brew tap cloudfoundry/tap
-brew tap k14s/tap
+brew tap vmware-tanzu/carvel
 brew tap AdoptOpenJDK/openjdk
 
 brew install watch
