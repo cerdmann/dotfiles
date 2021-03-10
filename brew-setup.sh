@@ -20,6 +20,8 @@ brew install homebrew/cask/docker
 brew install kind
 brew install k9s
 brew install octant
+brew install kustomize
+brew install helm
 
 brew install gradle
 brew install maven
