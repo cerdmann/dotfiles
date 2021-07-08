@@ -1,5 +1,3 @@
-brew tap cloudfoundry/tap
-brew tap vmware-tanzu/carvel
 brew tap AdoptOpenJDK/openjdk
 
 brew install watch
@@ -9,13 +7,9 @@ brew install git
 brew install kubectl
 brew install wget
 brew install jq
-brew install cf-cli
-brew install bosh-cli
-brew install credhub-cli
-brew install ytt kbld kapp imgpkg kwt vendir
-brew cask install adoptopenjdk/openjdk/adoptopenjdk8 
-brew cask install adoptopenjdk11
-brew cask install adoptopenjdk14
+brew install adoptopenjdk/openjdk/adoptopenjdk8 
+brew install adoptopenjdk11
+brew install adoptopenjdk14
 brew install homebrew/cask/docker
 brew install kind
 brew install k9s
@@ -42,7 +36,7 @@ python3 -m pip install nb-clean
 python -m bash_kernel.install
 
 brew tap homebrew/cask-fonts
-brew cask install font-hack-nerd-font
+brew install font-hack-nerd-font
 
 brew install --cask visual-studio-code
 
