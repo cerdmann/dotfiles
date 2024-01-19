@@ -36,7 +36,9 @@ python3 -m pip install nb-clean
 python -m bash_kernel.install
 
 brew tap homebrew/cask-fonts
-brew install font-hack-nerd-font
+brew search '/font-.*-nerd-font/' | awk '{ print $1 }' | xargs -I{} brew install --cask {} || true
+
+
 
 brew install --cask visual-studio-code
 
