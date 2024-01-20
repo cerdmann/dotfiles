@@ -81,7 +81,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew pyenv jenv gradle mvn kubectl osx ssh-agent direnv docker)
+plugins=(git brew pyenv jenv gradle mvn kubectl ssh-agent direnv docker npm nodenv macos helm aws azure)
 
 source $ZSH/oh-my-zsh.sh
 
