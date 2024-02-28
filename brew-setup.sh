@@ -1,5 +1,3 @@
-brew tap AdoptOpenJDK/openjdk
-
 brew install watch
 brew install tree
 brew install vim
@@ -7,9 +5,16 @@ brew install git
 brew install kubectl
 brew install wget
 brew install jq
-brew install adoptopenjdk/openjdk/adoptopenjdk8 
-brew install adoptopenjdk11
-brew install adoptopenjdk14
+
+
+brew tap homebrew/cask-versions
+brew install openjdk@21 
+sudo ln -sfn /opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk21.jdk
+brew install openjdk@17
+sudo ln -sfn /opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk17.jdk
+brew install openjdk@11
+sudo ln -sfn /opt/homebrew/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk11.jdk
+
 brew install homebrew/cask/docker
 brew install kind
 brew install k9s
@@ -24,27 +29,30 @@ brew install jenv
 brew install pyenv
 brew install direnv
 
-brew install jupyterlab
-brew install git-crypt
+eval "$(pyenv init -)"
+pyenv install 3.11.8
+pyenv global 3.11.8
 
-pip3 install --upgrade pip setuptools six wheel
+python --version
+
+pip install --upgrade pip setuptools six wheel
 pip install ipykernel
-pip3 install ipython
-pip3 install bash_kernel
-python3 -m pip install nb-clean
-
+pip install ipython
+pip install bash_kernel
+python -m pip install nb-clean
 python -m bash_kernel.install
 
-brew tap homebrew/cask-fonts
-brew search '/font-.*-nerd-font/' | awk '{ print $1 }' | xargs -I{} brew install --cask {} || true
-
+brew install jupyterlab
+brew install git-crypt
 
 
 brew install --cask visual-studio-code
 
-jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/
-jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/
-jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-14.jdk/Contents/Home/
+eval "$(jenv init -)" 
+jenv add /Library/Java/JavaVirtualMachines/openjdk21.jdk/Contents/Home/
+jenv add /Library/Java/JavaVirtualMachines/openjdk17.jdk/Contents/Home/
+jenv add /Library/Java/JavaVirtualMachines/openjdk11.jdk/Contents/Home/
 jenv enable-plugin maven
 jenv enable-plugin gradle
+jenv enable-plugin export 
 
