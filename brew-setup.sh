@@ -45,6 +45,7 @@ python -m bash_kernel.install
 brew install jupyterlab
 brew install git-crypt
 
+brew install font-fira-code-nerd-font
 
 brew install --cask visual-studio-code
 
