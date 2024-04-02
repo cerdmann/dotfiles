@@ -115,3 +115,4 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 git config --global pager.branch false
 git config --global --replace-all core.pager "less -F -X"
+git config --global init.defaultBranch main
